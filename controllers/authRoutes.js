@@ -4,8 +4,8 @@ const express = require("express");
 const router = express.Router();
 const axios = require("axios");
 
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 const REDIRECT_URI = "https://localhost:3000/auth/login/callback";
 
 router.get("/login", (req, res) => {
